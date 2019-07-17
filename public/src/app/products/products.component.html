@@ -1,0 +1,19 @@
+<h1>Products List</h1>
+
+<div class="products_box">
+    <div class="product_box" *ngFor="let product of products">
+        <div class="product_image_box">
+            <img class="product_image" [src]="product.url" alt="Camera Image">
+        </div>
+        <p class="product_title">{{ product.title }}</p>
+        <h3>${{ product.price }}</h3>
+        <div class="buttons">
+            <button class="btn btn-primary" [routerLink]="['edit', product._id]">Edit</button>
+            <!-- <button type="button" (click)="getProductInfo(product)" class="btn btn-primary">Edit</button> -->
+            <button type="button" (click)="delete(product._id)" class="btn btn-primary">Delete</button>
+        </div>
+    </div>
+</div>
+
+<!-- <app-products-edit *ngIf="productSel" [display]="productSel" (taskEmitter)="dataFromChild($event)"></app-products-edit> -->
+<router-outlet></router-outlet>

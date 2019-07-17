@@ -1,0 +1,26 @@
+.products_box{
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    margin: 20px 0px;
+}
+.product_box{
+    width: 200px;
+    display: inline-block;
+    align-content: flex-start;
+}
+.product_image_box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.product_image{
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+.product_title{
+    height: 50px;
+    overflow-y: auto;
+}

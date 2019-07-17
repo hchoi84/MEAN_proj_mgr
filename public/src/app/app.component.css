@@ -1,0 +1,27 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+*{
+    border: 1px dotted green;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    margin-right: 10px;
+    width: 75px;
+}
+
+/* .ng-invalid{ color: red; } */
+/* .ng-valid{ color: green; } */
+/* .ng-untouched{ color: green; } */
+/* .ng-touched{ color: red; } */
+/* .ng-dirty{ color: red; } */
+/* .ng-prstine{ color: green; } */
